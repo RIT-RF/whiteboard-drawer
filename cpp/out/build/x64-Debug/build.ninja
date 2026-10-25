@@ -41,62 +41,80 @@ include CMakeFiles\rules.ninja
 
 cmake_ninja_workdir = D$:\Trennan\RFProjects\whiteboard-drawer\cpp\out\build\x64-Debug\
 # =============================================================================
-# Object build statements for EXECUTABLE target Motors
+# Object build statements for EXECUTABLE target WPlot
 
 
 #############################################
-# Order-only phony target for Motors
+# Order-only phony target for WPlot
 
-build cmake_object_order_depends_target_Motors: phony || .
+build cmake_object_order_depends_target_WPlot: phony || .
 
-build CMakeFiles\Motors.dir\Main.cpp.obj: CXX_COMPILER__Motors_unscanned_Debug D$:\Trennan\RFProjects\whiteboard-drawer\cpp\Main.cpp || cmake_object_order_depends_target_Motors
+build CMakeFiles\WPlot.dir\Main.cpp.obj: CXX_COMPILER__WPlot_unscanned_Debug D$:\Trennan\RFProjects\whiteboard-drawer\cpp\Main.cpp || cmake_object_order_depends_target_WPlot
   CONFIG = Debug
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd
-  OBJECT_DIR = CMakeFiles\Motors.dir
-  OBJECT_FILE_DIR = CMakeFiles\Motors.dir
-  TARGET_COMPILE_PDB = CMakeFiles\Motors.dir\
-  TARGET_PDB = Motors.pdb
-  TARGET_SUPPORT_DIR = CMakeFiles\Motors.dir
+  OBJECT_DIR = CMakeFiles\WPlot.dir
+  OBJECT_FILE_DIR = CMakeFiles\WPlot.dir
+  TARGET_COMPILE_PDB = CMakeFiles\WPlot.dir\
+  TARGET_PDB = WPlot.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\WPlot.dir
 
-build CMakeFiles\Motors.dir\src\Motors.cpp.obj: CXX_COMPILER__Motors_unscanned_Debug D$:\Trennan\RFProjects\whiteboard-drawer\cpp\src\Motors.cpp || cmake_object_order_depends_target_Motors
+build CMakeFiles\WPlot.dir\src\Matrix.cpp.obj: CXX_COMPILER__WPlot_unscanned_Debug D$:\Trennan\RFProjects\whiteboard-drawer\cpp\src\Matrix.cpp || cmake_object_order_depends_target_WPlot
   CONFIG = Debug
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd
-  OBJECT_DIR = CMakeFiles\Motors.dir
-  OBJECT_FILE_DIR = CMakeFiles\Motors.dir\src
-  TARGET_COMPILE_PDB = CMakeFiles\Motors.dir\
-  TARGET_PDB = Motors.pdb
-  TARGET_SUPPORT_DIR = CMakeFiles\Motors.dir
+  OBJECT_DIR = CMakeFiles\WPlot.dir
+  OBJECT_FILE_DIR = CMakeFiles\WPlot.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\WPlot.dir\
+  TARGET_PDB = WPlot.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\WPlot.dir
 
-build CMakeFiles\Motors.dir\src\Matrix.cpp.obj: CXX_COMPILER__Motors_unscanned_Debug D$:\Trennan\RFProjects\whiteboard-drawer\cpp\src\Matrix.cpp || cmake_object_order_depends_target_Motors
+build CMakeFiles\WPlot.dir\src\Motors.cpp.obj: CXX_COMPILER__WPlot_unscanned_Debug D$:\Trennan\RFProjects\whiteboard-drawer\cpp\src\Motors.cpp || cmake_object_order_depends_target_WPlot
   CONFIG = Debug
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd
-  OBJECT_DIR = CMakeFiles\Motors.dir
-  OBJECT_FILE_DIR = CMakeFiles\Motors.dir\src
-  TARGET_COMPILE_PDB = CMakeFiles\Motors.dir\
-  TARGET_PDB = Motors.pdb
-  TARGET_SUPPORT_DIR = CMakeFiles\Motors.dir
+  OBJECT_DIR = CMakeFiles\WPlot.dir
+  OBJECT_FILE_DIR = CMakeFiles\WPlot.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\WPlot.dir\
+  TARGET_PDB = WPlot.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\WPlot.dir
+
+build CMakeFiles\WPlot.dir\src\Drawing.cpp.obj: CXX_COMPILER__WPlot_unscanned_Debug D$:\Trennan\RFProjects\whiteboard-drawer\cpp\src\Drawing.cpp || cmake_object_order_depends_target_WPlot
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd
+  OBJECT_DIR = CMakeFiles\WPlot.dir
+  OBJECT_FILE_DIR = CMakeFiles\WPlot.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\WPlot.dir\
+  TARGET_PDB = WPlot.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\WPlot.dir
+
+build CMakeFiles\WPlot.dir\src\StateMachine.cpp.obj: CXX_COMPILER__WPlot_unscanned_Debug D$:\Trennan\RFProjects\whiteboard-drawer\cpp\src\StateMachine.cpp || cmake_object_order_depends_target_WPlot
+  CONFIG = Debug
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd
+  OBJECT_DIR = CMakeFiles\WPlot.dir
+  OBJECT_FILE_DIR = CMakeFiles\WPlot.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\WPlot.dir\
+  TARGET_PDB = WPlot.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\WPlot.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target Motors
+# Link build statements for EXECUTABLE target WPlot
 
 
 #############################################
-# Link the executable Motors.exe
+# Link the executable WPlot.exe
 
-build Motors.exe: CXX_EXECUTABLE_LINKER__Motors_Debug CMakeFiles\Motors.dir\Main.cpp.obj CMakeFiles\Motors.dir\src\Motors.cpp.obj CMakeFiles\Motors.dir\src\Matrix.cpp.obj
+build WPlot.exe: CXX_EXECUTABLE_LINKER__WPlot_Debug CMakeFiles\WPlot.dir\Main.cpp.obj CMakeFiles\WPlot.dir\src\Matrix.cpp.obj CMakeFiles\WPlot.dir\src\Motors.cpp.obj CMakeFiles\WPlot.dir\src\Drawing.cpp.obj CMakeFiles\WPlot.dir\src\StateMachine.cpp.obj
   CONFIG = Debug
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -MDd
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
-  OBJECT_DIR = CMakeFiles\Motors.dir
+  OBJECT_DIR = CMakeFiles\WPlot.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\Motors.dir\
-  TARGET_FILE = Motors.exe
-  TARGET_IMPLIB = Motors.lib
-  TARGET_PDB = Motors.pdb
-  TARGET_SUPPORT_DIR = CMakeFiles\Motors.dir
+  TARGET_COMPILE_PDB = CMakeFiles\WPlot.dir\
+  TARGET_FILE = WPlot.exe
+  TARGET_IMPLIB = WPlot.lib
+  TARGET_PDB = WPlot.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\WPlot.dir
 
 
 #############################################
@@ -124,7 +142,7 @@ build rebuild_cache: phony CMakeFiles\rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build Motors: phony Motors.exe
+build WPlot: phony WPlot.exe
 
 # =============================================================================
 # Folder targets.
@@ -134,7 +152,7 @@ build Motors: phony Motors.exe
 #############################################
 # Folder: D:/Trennan/RFProjects/whiteboard-drawer/cpp/out/build/x64-Debug
 
-build all: phony Motors.exe
+build all: phony WPlot.exe
 
 # =============================================================================
 # Built-in targets

@@ -24,7 +24,7 @@ namespace Matrix {
 			<< std::endl;
 
 		// Create the 2D vector with the user input size. Indices initialized to zero.
-		std::vector<std::vector<bool>> matrix(SIZE_X, std::vector<bool>(SIZE_Y, -1));
+		std::vector<std::vector<bool>> matrix(SIZE_X, std::vector<bool>(SIZE_Y, 0));
 
 		return matrix;
 	}

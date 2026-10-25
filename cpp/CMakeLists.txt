@@ -5,8 +5,10 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Define the executable target and explicity list source files
-add_executable(Motors
+add_executable(WPlot
 	Main.cpp
-	src/Motors.cpp
 	src/Matrix.cpp
+	src/Motors.cpp
+	src/Drawing.cpp
+	src/StateMachine.cpp
 )

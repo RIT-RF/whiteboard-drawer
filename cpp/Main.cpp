@@ -1,8 +1,8 @@
 #include <vector>
 #include <iostream>
 
-#include "Matrix.h"
-#include "Motors.h"
+#include "include/Matrix.h"
+#include "include/Drawing.h"
 
 int main() {
 	// Matrix
@@ -13,10 +13,9 @@ int main() {
 
 	int height = getHeight();
 
-	// Motors
-	Motors::motor1::rotationDirection(width, height, matrix); // Using Namespace
-
-	Motors::motor2::rotationDirection(width, height, matrix); // Using Namespace
+	// Drawing
+	using namespace Drawing;
+		drawChoice(width, height, matrix); // Using Namespace
 
 	return 0;
 }

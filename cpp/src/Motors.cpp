@@ -1,80 +1,38 @@
-#include <iostream>
+#include <vector>
 
-#include "../Matrix.h"
-#include "../Motors.h"
+#include "../include/Motors.h"
+#include "../include/LimitSwitch.h"
 
-namespace Motors {
-	namespace motor1 {
-		bool isRunning = false;
+// Lengths based on material used for framing
+constexpr int LENGTH_X = 50;
+constexpr int LENGTH_Y = 50;
 
-		int rotationDirection(int sizeX, int sizeY, const std::vector<std::vector<bool>>& matrix) {
-			using namespace Matrix;
+// Defining limit switch calculations for homing 
+namespace LimitSwitch {
+	namespace LimitMotor {
 
-			int z = 0;
+	}
 
-			for (int x = 0; x < sizeX; ++x) {
-				for (int y = 0; y < sizeY; ++y) {
+	namespace LimitSide {
+		static bool Orient() {
+			bool X = (LENGTH_X != 0);
 
-					int cellValue = matrix[x][y];
-
-					if (cellValue > 0) {
-						isRunning = true;
-
-						std::cout << "Step "
-							<< z
-							<< " Motor 1 is running!"
-							<< std::endl;
-					}
-					else {
-						std::cout << "Step "
-							<< z
-							<< ": Motor 1 is not running!"
-							<< std::endl;
-					};
-
-					++z;
-				}
-			}
-			// Insert new line for next print
-			std::cout << "\n"
-				<< std::endl;
-
-			return isRunning;
+			return X;
 		}
 	}
-	namespace motor2 {
-		bool isRunning = false;
+}
 
-		int rotationDirection(int sizeX, int sizeY, const std::vector<std::vector<bool>>& matrix) {
-			using namespace Matrix;
+// Defining rotation direction and instructions for motors
+namespace Motors {
+	namespace Motors1 {
+		static int rotationDirection(int sizeX, int sizeY, const std::vector<std::vector<bool>>& matrix) {
+			
+		}
+	}
 
-			int z = 0;
+	namespace Motors2 {
+		static int rotationDirection(int sizeX, int sizeY, const std::vector<std::vector<bool>>& matrix) {
 
-			for (int x = 0; x < sizeX; ++x) {
-				for (int y = 0; y < sizeY; ++y) {
-
-					int cellValue = matrix[x][y];
-
-					if (cellValue > 0) {
-						isRunning = true;
-
-						std::cout << "Step "
-							<< z
-							<< ": Motor 2 is running!"
-							<< std::endl;
-					}
-					else {
-						std::cout << "Step "
-							<< z
-							<< " Motor 2 is not running!"
-							<< std::endl;
-					};
-
-					++z;
-				}
-			}
-
-			return isRunning;
 		}
 	}
 }
