@@ -2,7 +2,7 @@
 
 #include <cstdint>
 
-enum class StateMachine : uint8_t {
+enum class StateMachine : std::uint8_t {
 	HOMING,
 	IDLE,
 	RUNNING,
