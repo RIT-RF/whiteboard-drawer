@@ -1,11 +1,9 @@
 #pragma once
 
-#include <cstdint>
-
-enum class StateMachine : std::uint8_t {
+enum class StateMachine {
+	BOOT,
 	HOMING,
 	IDLE,
 	RUNNING,
-	ERROR,
-	SHUTDOWN
+	ERROR
 };
