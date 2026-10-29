@@ -1,7 +1,7 @@
 #include <iostream>
 
-#include "../Matrix.h"
-#include "../Drawing.h"
+#include "../include/Matrix.h"
+#include "../include/Drawing.h"
 
 namespace Drawing {
 	bool isDrawing = false;

@@ -25,13 +25,13 @@ namespace LimitSwitch {
 // Defining rotation direction and instructions for motors
 namespace Motors {
 	namespace Motors1 {
-		static int rotationDirection(int sizeX, int sizeY, const std::vector<std::vector<bool>>& matrix) {
+		static int rotation(int sizeX, int sizeY, const std::vector<std::vector<bool>>& matrix) {
 			
 		}
 	}
 
 	namespace Motors2 {
-		static int rotationDirection(int sizeX, int sizeY, const std::vector<std::vector<bool>>& matrix) {
+		static int rotation(int sizeX, int sizeY, const std::vector<std::vector<bool>>& matrix) {
 
 		}
 	}

@@ -3,7 +3,7 @@
 #include "../include/StateMachine.h"
 
 int main() {
-	StateMachine currentState = MachineState::Homing;
+	StateMachine currentState = StateMachine::BOOT;
 
 	// Home motors to limit switches (side and the motor)
 
@@ -15,5 +15,5 @@ int main() {
 
 	// Exit to selection screen for next drawing
 
-	rewind 0;
+	return 0;
 }
