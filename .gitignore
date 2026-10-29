@@ -69,4 +69,4 @@ Testing/
 
 # VS and VS Code
 *.vs
-*.vscode
+.vscode
