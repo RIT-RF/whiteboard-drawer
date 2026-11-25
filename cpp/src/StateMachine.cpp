@@ -1,19 +1,17 @@
 #include <iostream>
 
-#include "../include/StateMachine.h"
+#include "../include/StateMachine.hpp"
 
-int main() {
-	StateMachine currentState = StateMachine::BOOT;
+/*
+StateMachine currentState = StateMachine::BOOT;
 
-	// Home motors to limit switches (side and the motor)
+// Home motors to limit switches (side and the motor)
 
-	// Center after this
+// Center after this
 
-	// Idle until told to start
+// Idle until told to start
 
-	// Run Matrix and draw user input
+// Run Matrix and draw user input
 
-	// Exit to selection screen for next drawing
-
-	return 0;
-}
+// Exit to selection screen for next drawing
+*/

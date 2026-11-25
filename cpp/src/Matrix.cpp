@@ -3,9 +3,9 @@
 #include <iostream>
 
 
-#include "../include/Matrix.h"
+#include "../include/Matrix.hpp"
 
-
+/*
 namespace Matrix {
 
 	std::vector<std::vector<bool>> writeMatrix(const int x,const int y) {
@@ -17,3 +17,4 @@ namespace Matrix {
 		return matrix;
 	}
 }
+*/

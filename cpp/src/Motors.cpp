@@ -1,8 +1,9 @@
 #include <vector>
 
-#include "../include/Motors.h"
-#include "../include/LimitSwitch.h"
+#include "../include/Motors.hpp"
+#include "../include/LimitSwitch.hpp"
 
+/*
 // Lengths based on material used for framing
 constexpr int LENGTH_X = 50;
 constexpr int LENGTH_Y = 50;
@@ -36,3 +37,4 @@ namespace Motors {
 		}
 	}
 }
+*/
