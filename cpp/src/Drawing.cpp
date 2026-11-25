@@ -1,8 +1,9 @@
 #include <iostream>
 
-#include "../include/Matrix.h"
-#include "../include/Drawing.h"
+#include "../include/Matrix.hpp"
+#include "../include/Drawing.hpp"
 
+/*
 namespace Drawing {
 	bool isDrawing = false;
 
@@ -41,3 +42,4 @@ namespace Drawing {
 		return isDrawing;
 	}
 }
+*/
